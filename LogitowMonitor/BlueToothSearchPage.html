@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+
+<pe:mcml>
+
+<script refresh="false" type="text/npl" src="BlueToothSearchPage.lua"><![CDATA[
+CreatorDesktop = commonlib.gettable("MyCompany.Aries.Creator.Game.Desktop.CreatorDesktop");
+NPL.load("(gl)Mod/LogitowMonitor/BlueToothSearchPage.lua");
+BlueToothSearchPage = commonlib.gettable("MyCompany.Aries.Game.GUI.BlueToothSearchPage");
+BlueToothSearchPage.OnInit();
+]]></script>
+
+<pe:container alignment="_rt" width="228px" height="50px" style="position:relative;margin-left:0px;margin-top:0px;background:url(Mod/LogitowMonitor/textures/Bluetooth/Bluetooth.png#2 2 228 50)">
+
+	<pe:container alignment="_lt" width="64px" height="31px" style="position:relative;margin-left:20px;margin-top:10px;background:url(Mod/LogitowMonitor/textures/Bluetooth/Bluetooth.png#2 54 64 31)">
+		<pe:container name="lense" alignment="_rb" width="26px" height="26px" style="position:relative;margin-left:-10px;margin-top:-10px;background:url(Mod/LogitowMonitor/textures/Bluetooth/Bluetooth.png#2 87 26 26)"/>	
+	</pe:container>
+	
+	<pe:container alignment="_rt" width="43px" height="22px" style="position:relative;margin-left:10px;margin-top:15px;background:url(Mod/LogitowMonitor/textures/Bluetooth/Bluetooth.png#30 87 43 22)">
+		<pe:progressbar name="progressbar_battery"
+					Value="0"
+                    background = ""
+                    blockimage = "Mod/LogitowMonitor/textures/Bluetooth/Bluetooth.png;232 2 4 16: 1 7 1 7"
+                    block_overlay_bg=""
+                    style="float:left;margin:0px;margin-left:2px;margin-top:2px;width:37px;height:18px;"/>
+	</pe:container>
+
+	<pe:label name="txt_battery" style="position:relative;margin-left:104px;margin-top:8px;text-align:centre;font-size:24;color:#FFFFFF;"/>
+</pe:container>
+
+</pe:mcml> 
+</body>
+</html>
